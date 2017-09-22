@@ -37,7 +37,7 @@
 </head>
 <body>
 <canvas id="c1" width="800" height="600"></canvas>
-<div id="loading"></div>
+<!-- <div id="loading"></div> -->
 </body>
   <!--common.js-->
   <script src="common.js"></script>
@@ -56,13 +56,9 @@
   <script src="coin.js"></script>
   <!-- 游戏引擎 -->
   <script>
-    var fishArr = [];//数组用来装鱼
-    var bulletArr = [];//数组用来装炮弹
-
+    var oC=document.querySelector('#c1');
+    var gd=oC.getContext('2d');
     window.onload = function () {
-      var oC=document.querySelector('#c1');
-      var gd=oC.getContext('2d');
-
       loadImage(resource,init);
       function loading( obj,cur,sum ){
         obj.innerHTML = '正在努力加载中...'+parseInt((cur/sum)*100)+"%"
