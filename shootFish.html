@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>捕鱼达人666</title>
+  <meta name="viewport" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 微软雅黑;
+    }
+    body{
+      text-align: center;
+      background: #000;
+    }
+
+    canvas{
+      background: url("./img/game_bg_2_hd.jpg");
+    }
+    /*#loading{
+      position: absolute;
+      width: 250px;
+      height: 100px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 30px;
+      color:white;
+    }*/
+  </style>
+
+  <!--common.js-->
+  <script src="common.js"></script>
+  <!--资源-->
+  <script src='resources.js'></script>
+  <!--FISH类-->
+  <script src="fish.js"></script>
+  <!-- 炮台类 -->
+  <script src='cannon.js'></script>
+  <!-- 子弹 -->
+  <script src="bullet.js"></script>
+  <!-- 网 -->
+  <script src='web.js'></script>
+  <!-- 金币 -->
+  <script src="coin.js"></script>
+  <!-- 游戏引擎 -->
+  <script src="gameEngine.js"></script>
+</head>
+<body>
+<canvas id="c1" width="800" height="600"></canvas>
+<!-- <div id="loading"></div> -->
+</body>
+</html>
