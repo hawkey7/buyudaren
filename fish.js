@@ -61,8 +61,6 @@ class Shark extends Fish{//位置,碰撞体积,角度需要指定
   constructor(type){
     super(type);
     this.speed = 1;
-    this.w = 509;
-    this. h = 270;
     this.rotate = 0;
     this.collR = 150;
     this.cur =0;
@@ -75,10 +73,17 @@ class Shark extends Fish{//位置,碰撞体积,角度需要指定
     if( this.rotate > 90 && this.rotate < 270 ){
       gd.scale(1,-1)
     }
+    if( this.type==1 ){
+      this.w = 509;
+      this.h = 270;
+    }else{
+      this.w = 516;
+      this.h = 273;
+    }
     gd.drawImage( JSON['shark'+this.type],
       0,this.cur*this.h,this.w,this.h,
       -this.w/2,-this.h/2,this.w,this.h
-     );
+    );
     gd.restore();
   }
   move(){
